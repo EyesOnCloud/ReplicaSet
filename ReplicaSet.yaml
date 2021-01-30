@@ -6,12 +6,12 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: webserver
+      tier: web-server
   template:
     metadata:
       labels:
-        tier: webserver
+        tier: web-server
     spec:
       containers:
-      - name: nginx
+      - name: web-server
         image: nginx
